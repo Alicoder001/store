@@ -1,0 +1,177 @@
+// .work {
+//   display: flex;
+//   justify-content: space-between;
+//   width: 100%;
+//   margin-left: auto;
+//   max-width: 173.6rem;
+//   @include responsive(desktop) {
+//     padding-left: 0;
+//   }
+//   @include responsive(tablet) {
+//     flex-direction: column;
+//   }
+//   &-info {
+//     text-align: start;
+//     width: 100%;
+//     @include responsive(min-desktop) {
+//       max-width: 50%;
+//     }
+//     @include responsive(max-tablet) {
+//       text-align: center;
+//     }
+//     @include responsive(tablet) {
+//       max-width: 100%;
+//     }
+//     &__name {
+//       font-size: 3rem;
+//       line-height: 1.5;
+//       margin-bottom: 8rem;
+//       @include responsive(max-desktop) {
+//         margin-bottom: 5rem;
+//       }
+//       @include responsive(tablet) {
+//         margin-bottom: 2rem;
+//       }
+//     }
+//     &__title {
+//       @include responsive(max-desktop) {
+//         font-size: 6rem;
+//       }
+//       @include responsive(desktop) {
+//         font-size: 5rem;
+//       }
+//       @include responsive(min-desktop) {
+//         font-size: 4rem;
+//       }
+//       @include responsive(tablet) {
+//         font-size: 3rem;
+//       }
+//       &-span {
+//         color: #3c82f4;
+//       }
+//       margin-bottom: 2.9rem;
+//     }
+//     &__categories {
+//       display: flex;
+//       flex-direction: column;
+//       row-gap: 1.2rem;
+//       margin-bottom: 6.6rem;
+//       @include responsive(tablet) {
+//         margin-bottom: 2rem;
+//       }
+//     }
+//     &__category {
+//       display: flex;
+//       column-gap: 1.2rem;
+//       @include responsive(tablet) {
+//         justify-content: center;
+//       }
+//       &-number {
+//         width: 3.3rem;
+//         height: 3.3rem;
+//         font-size: 1.8rem;
+//         line-height: 1.5;
+//         font-weight: 500;
+//         background-color: #2d2d2d;
+//         color: $title-color;
+//         border-radius: 50%;
+//         padding: 0.5rem 1.3rem 0.1rem;
+//       }
+//       &-subt {
+//         font-size: 2.3rem;
+//         line-height: 1.47;
+//         font-weight: 400;
+//         color: $title-color;
+//         @include responsive(max-desktop) {
+//           font-size: 2rem;
+//         }
+//         @include responsive(desktop) {
+//           font-size: 1.8rem;
+//         }
+//         @include responsive(min-desktop) {
+//           font-size: 1.5rem;
+//         }
+//       }
+//     }
+//     &__btns {
+//       display: flex;
+//       column-gap: 2.4rem;
+//       @include responsive(min-desktop) {
+//         flex-direction: column;
+//         row-gap: 1.5rem;
+//       }
+//     }
+//     &__btn {
+//       display: flex;
+//       justify-content: center;
+//       width: 20.7rem;
+//       padding: 2.1rem 0 2.2rem;
+//       @include responsive(desktop) {
+//         width: 18rem;
+//       }
+//       @include responsive(min-desktop) {
+//         width: 90%;
+//         padding: 1rem 0 1rem;
+//       }
+//       @include responsive(tablet) {
+//         max-width: 40rem;
+//         width: 100%;
+//         margin: 0 auto;
+//       }
+//     }
+//   }
+//   &-img__wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+//   &-img {
+//     width: 86rem;
+//     height: 68rem;
+//     z-index: 1;
+//     @include responsive(max-desktop) {
+//       width: 70rem;
+//       height: auto;
+//     }
+//     @include responsive(max-desktop) {
+//       width: 60rem;
+//       height: auto;
+//     }
+//     @include responsive(desktop) {
+//       width: 50rem;
+//       height: auto;
+//       margin-top: 5rem;
+//     }
+//     @include responsive(max-tablet) {
+//       width: 30rem;
+//       height: auto;
+//       margin-top: 10rem;
+//     }
+//     @include responsive(max-tablet) {
+//       width: 90%;
+//       height: auto;
+//       margin-top: 5rem;
+//     }
+//   }
+//   &-img__footer {
+//     width: 30.9rem;
+//     height: 27.6rem;
+//     background-color: #8b8b8b;
+//     margin-top: -25.1rem;
+//     margin-left: 17rem;
+//     @include responsive(desktop) {
+//       width: 20rem;
+//       height: 20rem;
+//       margin-top: -18.1rem;
+//       margin-left: 15rem;
+//     }
+//     @include responsive(max-tablet) {
+//       width: 12rem;
+//       margin-left: 8rem;
+//     }
+//     @include responsive(max-tablet) {
+//       width: 15rem;
+//       margin-left: 0;
+//     }
+//   }
+// }

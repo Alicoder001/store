@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  color: #214080;
+  font-weight: 700;
+}
+p {
+  color: #000000;
+  font-weight: 400;
+  // font-family: "Circe";
+}
+button {
+  font-family: "Circe", sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+  @media (max-width: 1250px) {
+    font-size: 60px;
+  }
+  @media (max-width: 768px) {
+    font-size: 52px;
+  }
+  @media (max-width: 550px) {
+    font-size: 36px;
+  }
+}
+h4 {
+  font-size: 30px;
+  @media (max-width: 550px) {
+    font-size: 14px;
+  }
+}
