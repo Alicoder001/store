@@ -30,9 +30,45 @@ h1 {
     font-size: 36px;
   }
 }
+h2 {
+  font-size: 60px;
+  color: #214080;
+  @media (max-width: 1440px) {
+    font-size: 50px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 40px;
+  }
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+  @media (max-width: 550px) {
+    font-size: 20px;
+  }
+}
+h5 {
+  font-size: 29px;
+  @media (max-width: 1000px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 17px;
+  }
+}
 h4 {
   font-size: 30px;
   @media (max-width: 550px) {
     font-size: 14px;
   }
+}
+h3 {
+  font-size: 40px;
+  color: #214080;
+  @media (max-width: 1650px) {
+    font-size: 30px;
+  }
+}
+h6 {
+  font-size: 15px;
 }
