@@ -1648,9 +1648,12 @@ body {
   justify-content: space-between;
 }
 .advantage .system-item {
+  padding: 28px;
   max-width: 373px;
   width: 100%;
   background-color: white;
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  text-align: end;
+  position: relative;
 }/*# sourceMappingURL=main.css.map */
