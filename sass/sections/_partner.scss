@@ -1,0 +1,24 @@
+.partner {
+  &-title {
+    margin-bottom: 30px;
+  }
+  &-subtitle {
+    margin-bottom: 68px;
+  }
+  &-list {
+    display: grid;
+    justify-content: space-between;
+    gap: 32px;
+    grid-template-columns: repeat(3, minmax(250px, 350px));
+    margin-bottom: 150px;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 172px;
+    border: 3px solid rgba(41, 84, 177, 0.3);
+    // opacity: 0.3;
+    border-radius: 17px;
+  }
+}
