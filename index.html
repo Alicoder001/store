@@ -1,290 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./fonts/stylesheet.css" />
-  </head>
-  <body>
-    <div class="wrap">
-      <!-- HEADER -->
-      <header class="header">
-        <div class="container">
-          <div class="header-logo">
-            <img class="header-logo__img" src="./images/logo.svg" alt="logo" />
-          </div>
-          <div class="header-wrap">
-            <nav class="header-nav">
-              <ul class="header-nav__list">
-                <li class="header-nav__item">
-                  <a href="/">О нас</a>
-                </li>
-                <li class="header-nav__item">
-                  <a href="/">Наши решения</a>
-                </li>
-                <li class="header-nav__item">
-                  <a href="/">Продукты</a>
-                </li>
-                <li class="header-nav__item">
-                  <a href="/">Как это работает</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header-call">
-              <img
-                class="header-call__img"
-                src="./images/call.svg"
-                alt="phone"
-              />
-              <p class="header-call__number">8 800 899 99 99</p>
-            </div>
-          </div>
-          <div class="header-hamburger hamburger">
-            <img src="./images/hamburger.svg" alt="hamburger" />
-          </div>
-          <div class="overlay"></div>
-          <nav class="header-sidebar sidebar">
-            <img
-              class="header-sidebar__img sidebarHamburger"
-              src="./images/hamburger.svg"
-              alt=""
-            />
-            <ul class="header-sidebar__list">
-              <li class="header-sidebar__item">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./fonts/stylesheet.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="header-logo">
+          <img class="header-logo__img" src="./images/logo.svg" alt="logo" />
+        </div>
+        <div class="header-wrap">
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
                 <a href="/">О нас</a>
               </li>
-              <li class="header-sidebar__item">
+              <li class="header-nav__item">
                 <a href="/">Наши решения</a>
               </li>
-              <li class="header-sidebar__item">
+              <li class="header-nav__item">
                 <a href="/">Продукты</a>
               </li>
-              <li class="header-sidebar__item">
+              <li class="header-nav__item">
                 <a href="/">Как это работает</a>
               </li>
             </ul>
-            <div class="header-sidebar__call">
-              <img src="./images/call.svg" alt="phone" />
-              <p class="header-sidebar__number">8 800 899 99 99</p>
-            </div>
           </nav>
-        </div>
-
-        <img
-          class="header-line__img"
-          height="1"
-          width="100%"
-          src="./images/line.png"
-          alt="line"
-        />
-      </header>
-      <!-- /HEADER -->
-
-      <!-- HERO -->
-      <section class="hero">
-        <div class="container">
-          <div class="hero-info">
-            <h4 class="hero-name">Воспользуйтесь</h4>
-            <h1 class="hero-title">Self-Storage</h1>
-            <p class="hero-subtitle">
-              Удобное и надежное решение для хранения ваших личных вещей,
-              обеспечивая просторное пространство и гибкую аренду.
-            </p>
-            <div class="hero-button">
-              <button class="hero-btn outline-btn">
-                <p>Консультация</p>
-                <div class="img-wrap arrow-wrap"></div>
-              </button>
-              <button class="hero-btn primary-btn">Демо-версия</button>
-            </div>
-            <img
-              class="arrow-bottom"
-              src="./images/arrow.svg"
-              alt="arrow-bottom"
-            />
-          </div>
-          <div class="hero-img">
-            <div class="hero-notification left">
-              <h6 class="hero-notification__title large">Забронировать -</h6>
-              <div class="hero-notification__wrapper">
-                <h6 class="hero-notification__title small">легко и просто!</h6>
-                <div class="hero-notification__wrap">
-                  <p class="hero-notification__subtitle">
-                    Узнайте больше о том, как это сделать
-                  </p>
-                  <div class="notification-img-wrap img-wrap"></div>
-                </div>
-              </div>
-            </div>
-            <div class="hero-notification right">
-              <h6 class="hero-notification__title large">Узнайте больше</h6>
-              <div class="hero-notification__wrapper">
-                <h6 class="hero-notification__title small">
-                  о нашей продукции
-                </h6>
-                <div class="hero-notification__wrap">
-                  <p class="hero-notification__subtitle">
-                    Узнайте больше о том, о нашей продукции
-                  </p>
-                  <div class="notification-img-wrap img-wrap"></div>
-                </div>
-              </div>
-            </div>
-            <img
-              class="phone-img desktop"
-              src="./images/phone-desktop.svg"
-              alt="hero"
-            />
-            <img
-              class="phone-img tablet"
-              src="./images/hero-tablet.svg"
-              alt="hero"
-            />
+          <div class="header-call">
+            <img class="header-call__img" src="./images/call.svg" alt="phone" />
+            <p class="header-call__number">8 800 899 99 99</p>
           </div>
         </div>
-      </section>
-      <!-- /HERO -->
-    </div>
-    <!-- About section start "О НАС" -->
-    <div class="about">
+        <div class="header-hamburger hamburger">
+          <img src="./images/hamburger.svg" alt="hamburger" />
+        </div>
+        <div class="overlay"></div>
+        <nav class="header-sidebar sidebar">
+          <img class="header-sidebar__img sidebarHamburger" src="./images/hamburger.svg" alt="" />
+          <ul class="header-sidebar__list">
+            <li class="header-sidebar__item">
+              <a href="/">О нас</a>
+            </li>
+            <li class="header-sidebar__item">
+              <a href="/">Наши решения</a>
+            </li>
+            <li class="header-sidebar__item">
+              <a href="/">Продукты</a>
+            </li>
+            <li class="header-sidebar__item">
+              <a href="/">Как это работает</a>
+            </li>
+          </ul>
+          <div class="header-sidebar__call">
+            <img src="./images/call.svg" alt="phone" />
+            <p class="header-sidebar__number">8 800 899 99 99</p>
+          </div>
+        </nav>
+      </div>
+
+      <img class="header-line__img" height="1" width="100%" src="./images/line.png" alt="line" />
+    </header>
+    <!-- /HEADER -->
+
+    <!-- HERO -->
+    <section class="hero">
       <div class="container">
-        <div class="about-item">
-          <div class="about-item__image">
-            <img src="images/store.svg" alt="store" />
+        <div class="hero-info">
+          <h4 class="hero-name">Воспользуйтесь</h4>
+          <h1 class="hero-title">Self-Storage</h1>
+          <p class="hero-subtitle">
+            Удобное и надежное решение для хранения ваших личных вещей,
+            обеспечивая просторное пространство и гибкую аренду.
+          </p>
+          <div class="hero-button">
+            <button class="hero-btn outline-btn">
+              <p>Консультация</p>
+              <div class="img-wrap arrow-wrap"></div>
+            </button>
+            <button class="hero-btn primary-btn">Демо-версия</button>
           </div>
-          <div class="about-item__text">
-            <h1>О нас</h1>
-            <p>
-              Контейнеры хранения Self Storage предоставляют удобное и
-              безопасное решение для хранения различных вещей, от мебели до
-              сезонных предметов. Современные системы безопасности и гибкие
-              условия аренды делают эти контейнеры идеальным выбором для
-              организации пространства и сохранения ценных вещей.
-            </p>
-          </div>
+          <img class="arrow-bottom" src="./images/arrow.svg" alt="arrow-bottom" />
         </div>
-        <div class="about-problem">
-          <div class="about-problem__title">
-            <h1>Проблемы, которые мы решаем</h1>
+        <div class="hero-img">
+          <div class="hero-notification left">
+            <h6 class="hero-notification__title large">Забронировать -</h6>
+            <div class="hero-notification__wrapper">
+              <h6 class="hero-notification__title small">легко и просто!</h6>
+              <div class="hero-notification__wrap">
+                <p class="hero-notification__subtitle">
+                  Узнайте больше о том, как это сделать
+                </p>
+                <div class="notification-img-wrap img-wrap"></div>
+              </div>
+            </div>
           </div>
-          <div class="about-problem__item">
-            <div class="about-problem__item__inner">
-              <div class="row"></div>
-              <div class="about-problem__item__inner__text">
-                <h1>Проблема</h1>
-                <p>Способ решения проблемы. Способ решения проблемы</p>
+          <div class="hero-notification right">
+            <h6 class="hero-notification__title large">Узнайте больше</h6>
+            <div class="hero-notification__wrapper">
+              <h6 class="hero-notification__title small">
+                о нашей продукции
+              </h6>
+              <div class="hero-notification__wrap">
+                <p class="hero-notification__subtitle">
+                  Узнайте больше о том, о нашей продукции
+                </p>
+                <div class="notification-img-wrap img-wrap"></div>
               </div>
             </div>
-
-            <div class="about-problem__item__inner">
-              <div class="row"></div>
-              <div class="about-problem__item__inner__text">
-                <h1>Проблема</h1>
-                <p>Способ решения проблемы. Способ решения проблемы</p>
-              </div>
+          </div>
+          <img class="phone-img desktop" src="./images/phone-desktop.svg" alt="hero" />
+          <img class="phone-img tablet" src="./images/hero-tablet.svg" alt="hero" />
+        </div>
+      </div>
+    </section>
+    <!-- /HERO -->
+  </div>
+  <!-- About section start "О НАС" -->
+  <div class="about">
+    <div class="container">
+      <div class="about-item">
+        <div class="about-item__image">
+          <img src="images/store.svg" alt="store" />
+        </div>
+        <div class="about-item__text">
+          <h1>О нас</h1>
+          <p>
+            Контейнеры хранения Self Storage предоставляют удобное и
+            безопасное решение для хранения различных вещей, от мебели до
+            сезонных предметов. Современные системы безопасности и гибкие
+            условия аренды делают эти контейнеры идеальным выбором для
+            организации пространства и сохранения ценных вещей.
+          </p>
+        </div>
+      </div>
+      <div class="about-problem">
+        <div class="about-problem__title">
+          <h1>Проблемы, которые мы решаем</h1>
+        </div>
+        <div class="about-problem__item">
+          <div class="about-problem__item__inner">
+            <div class="row"></div>
+            <div class="about-problem__item__inner__text">
+              <h1>Проблема</h1>
+              <p>Способ решения проблемы. Способ решения проблемы</p>
             </div>
+          </div>
 
-            <div class="about-problem__item__inner">
-              <div class="row"></div>
-              <div class="about-problem__item__inner__text">
-                <h1>Проблема</h1>
-                <p>Способ решения проблемы. Способ решения проблемы</p>
-              </div>
+          <div class="about-problem__item__inner">
+            <div class="row"></div>
+            <div class="about-problem__item__inner__text">
+              <h1>Проблема</h1>
+              <p>Способ решения проблемы. Способ решения проблемы</p>
             </div>
+          </div>
 
-            <div class="about-problem__item__inner">
-              <div class="row"></div>
-              <div class="about-problem__item__inner__text">
-                <h1>Проблема</h1>
-                <p>Способ решения проблемы. Способ решения проблемы</p>
-              </div>
+          <div class="about-problem__item__inner">
+            <div class="row"></div>
+            <div class="about-problem__item__inner__text">
+              <h1>Проблема</h1>
+              <p>Способ решения проблемы. Способ решения проблемы</p>
             </div>
+          </div>
 
-            <div class="about-problem__item__inner">
-              <div class="row"></div>
-              <div class="about-problem__item__inner__text">
-                <h1>Проблема</h1>
-                <p>Способ решения проблемы. Способ решения проблемы</p>
-              </div>
+          <div class="about-problem__item__inner">
+            <div class="row"></div>
+            <div class="about-problem__item__inner__text">
+              <h1>Проблема</h1>
+              <p>Способ решения проблемы. Способ решения проблемы</p>
             </div>
+          </div>
 
-            <div class="about-problem__item__inner">
-              <div class="row"></div>
-              <div class="about-problem__item__inner__text">
-                <h1>Проблема</h1>
-                <p>Способ решения проблемы. Способ решения проблемы</p>
-              </div>
+          <div class="about-problem__item__inner">
+            <div class="row"></div>
+            <div class="about-problem__item__inner__text">
+              <h1>Проблема</h1>
+              <p>Способ решения проблемы. Способ решения проблемы</p>
             </div>
+          </div>
 
-            <div class="about-problem__item__inner">
-              <div class="row"></div>
-              <div class="about-problem__item__inner__text">
-                <h1>Проблема</h1>
-                <p>Способ решения проблемы. Способ решения проблемы</p>
-              </div>
+          <div class="about-problem__item__inner">
+            <div class="row"></div>
+            <div class="about-problem__item__inner__text">
+              <h1>Проблема</h1>
+              <p>Способ решения проблемы. Способ решения проблемы</p>
             </div>
+          </div>
 
-            <div class="about-problem__item__inner">
-              <div class="row"></div>
-              <div class="about-problem__item__inner__text">
-                <h1>Проблема</h1>
-                <p>Способ решения проблемы. Способ решения проблемы</p>
-              </div>
+          <div class="about-problem__item__inner">
+            <div class="row"></div>
+            <div class="about-problem__item__inner__text">
+              <h1>Проблема</h1>
+              <p>Способ решения проблемы. Способ решения проблемы</p>
+            </div>
+          </div>
+
+          <div class="about-problem__item__inner">
+            <div class="row"></div>
+            <div class="about-problem__item__inner__text">
+              <h1>Проблема</h1>
+              <p>Способ решения проблемы. Способ решения проблемы</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- About section end -->
+  </div>
+  <!-- About section end -->
 
-    <!-- PRODUCT -->
-    <section class="product">
-      <div class="container">
-        <h2 class="product-title">Наши продукты</h2>
-        <ul class="product-card">
-          <li class="product-card__item">
-            <div class="product-card__wrap">
-              <p class="product-card__type">Полная</p>
-              <h5 class="product-card__title">Автоматизация склада</h5>
-              <p class="product-card__description">
-                Контейнеры оборудованы электронными замками и системами доступа,
-                которые позволяют клиентам управлять своими контейнерами
-                удаленно через мобильные приложения или интернет-порталы.
-              </p>
-            </div>
-            <div class="product-card__wrap">
-              <h3 class="product-card__price">1659₽</h3>
-              <p class="product-card__month">в месяц</p>
-              <p class="product-card__time">19 900 ₽/год</p>
-              <button class="primary-btn product-card__button">
-                Купить год
-              </button>
-            </div>
-          </li>
-          <li class="product-card__item">
-            <div class="product-card__wrap">
-              <p class="product-card__type">Система</p>
-              <h5 class="product-card__title">Онлайн бронирования</h5>
-              <p class="product-card__description">
-                Через официальный веб-сайт или мобильное приложение,
-                пользователи могут просмотреть доступные контейнеры,
-                ознакомиться с их размерами и стоимостью, а затем выбрать
-                оптимальный вариант и забронировать его онлайн.
-              </p>
-            </div>
-            <div class="product-card__wrap">
-              <h3 class="product-card__price">1290₽</h3>
-              <p class="product-card__month">в месяц</p>
-              <p class="product-card__time">15 480 ₽/год</p>
-              <button class="product-card__button primary-btn">
-                Купить год
-              </button>
-            </div>
-          </li>
-        </ul>
-        <!-- <table class="product-table">
+  <!-- PRODUCT -->
+  <section class="product">
+    <div class="container">
+      <h2 class="product-title">Наши продукты</h2>
+      <ul class="product-card">
+        <li class="product-card__item">
+          <div class="product-card__wrap">
+            <p class="product-card__type">Полная</p>
+            <h5 class="product-card__title">Автоматизация склада</h5>
+            <p class="product-card__description">
+              Контейнеры оборудованы электронными замками и системами доступа,
+              которые позволяют клиентам управлять своими контейнерами
+              удаленно через мобильные приложения или интернет-порталы.
+            </p>
+          </div>
+          <div class="product-card__wrap">
+            <h3 class="product-card__price">1659₽</h3>
+            <p class="product-card__month">в месяц</p>
+            <p class="product-card__time">19 900 ₽/год</p>
+            <button class="primary-btn product-card__button">
+              Купить год
+            </button>
+          </div>
+        </li>
+        <li class="product-card__item">
+          <div class="product-card__wrap">
+            <p class="product-card__type">Система</p>
+            <h5 class="product-card__title">Онлайн бронирования</h5>
+            <p class="product-card__description">
+              Через официальный веб-сайт или мобильное приложение,
+              пользователи могут просмотреть доступные контейнеры,
+              ознакомиться с их размерами и стоимостью, а затем выбрать
+              оптимальный вариант и забронировать его онлайн.
+            </p>
+          </div>
+          <div class="product-card__wrap">
+            <h3 class="product-card__price">1290₽</h3>
+            <p class="product-card__month">в месяц</p>
+            <p class="product-card__time">15 480 ₽/год</p>
+            <button class="product-card__button primary-btn">
+              Купить год
+            </button>
+          </div>
+        </li>
+      </ul>
+      <!-- <table class="product-table">
           <tr class="product-table__header">
             <th>Плюсы</th>
             <th>Цифровизация склада</th>
@@ -321,127 +297,143 @@
           </tr>
         </table> -->
 
-        <!-- product -->
-        <h2 class="product-title title-secondary">Наша продукция</h2>
-        <p class="product-subtitle">
-          Современные системы безопасности и гибкие условия аренды делают эти
-          контейнеры идеальным выбором для организации пространства и сохранения
-          ценных вещей. Узнайте о них больше.
-        </p>
-        <!-- /product -->
+      <!-- product -->
+      <h2 class="product-title title-secondary">Наша продукция</h2>
+      <p class="product-subtitle">
+        Современные системы безопасности и гибкие условия аренды делают эти
+        контейнеры идеальным выбором для организации пространства и сохранения
+        ценных вещей. Узнайте о них больше.
+      </p>
+      <!-- /product -->
 
-        <div class="advantage">
-          <!-- security -->
-          <h6 class="advantage-type">наша продукция</h6>
-          <div class="advantage-line"></div>
-          <h3 class="advantage-title">Наши замки</h3>
-          <ul class="security">
-            <li class="security-item">
-              <img src="./images/lock.png" alt="lock" />
-              <div class="security-info">
-                <h3 class="security-info__title">SecureGuard Locks</h3>
-                <p class="security-info__subtitle">
-                  Надежные замки для контейнеров хранения обеспечивающие
-                  безопасность и защиту.
-                </p>
-                <div class="security-info__wrapper">
-                  <div class="security-info__number active">1</div>
-                  <p class="security-info__or">ИЛИ</p>
+      <div class="advantage">
+        <!-- security -->
+        <h6 class="advantage-type">наша продукция</h6>
+        <div class="advantage-line"></div>
+        <h3 class="advantage-title">Наши замки</h3>
+        <ul class="security">
+          <li class="security-item">
+            <img src="./images/lock.png" alt="lock" />
+            <div class="security-info">
+              <h3 class="security-info__title">SecureGuard Locks</h3>
+              <p class="security-info__subtitle">
+                Надежные замки для контейнеров хранения обеспечивающие
+                безопасность и защиту.
+              </p>
+              <div class="security-info__wrapper">
+                <div class="security-info__number active">1</div>
+                <p class="security-info__or">ИЛИ</p>
 
-                  <div class="security-info__number">2</div>
-                </div>
+                <div class="security-info__number">2</div>
               </div>
-            </li>
-            <li class="security-item reverse">
-              <img src="./images/fortnesslock.png" alt="lock" />
-              <div class="security-info">
-                <h3 class="security-info__title">FortressLock Systems</h3>
-                <p class="security-info__subtitle">
-                  Надежные замки для контейнеров хранения обеспечивающие
-                  безопасность и защиту.
-                </p>
-                <div class="security-info__wrapper">
-                  <div class="security-info__number">1</div>
-                  <p class="security-info__or">ИЛИ</p>
-                  <div class="security-info__number active">2</div>
-                </div>
+            </div>
+          </li>
+          <li class="security-item reverse">
+            <img src="./images/fortnesslock.png" alt="lock" />
+            <div class="security-info">
+              <h3 class="security-info__title">FortressLock Systems</h3>
+              <p class="security-info__subtitle">
+                Надежные замки для контейнеров хранения обеспечивающие
+                безопасность и защиту.
+              </p>
+              <div class="security-info__wrapper">
+                <div class="security-info__number">1</div>
+                <p class="security-info__or">ИЛИ</p>
+                <div class="security-info__number active">2</div>
               </div>
-            </li>
-          </ul>
-          <!-- /security -->
+            </div>
+          </li>
+        </ul>
+        <!-- /security -->
 
-          <!-- system -->
-          <h6 class="advantage-type">наша продукция</h6>
-          <div class="advantage-line"></div>
-          <h3 class="advantage-title">Наша система</h3>
-          <ul class="system">
-            <li class="system-item">
-              <div class="system-info">
-                <h3 class="system-title">RFID</h3>
-                <p class="system-category">панель</p>
-                <p class="system-subtitle">-идентификацию клиентов</p>
-                <p class="system-subtitle secondary-subtitle">
-                  -быстрый и удобный доступ к контейнерам хранения.
-                </p>
-                <p class="system-price">1659₽</p>
-                <p class="system-month">в месяц</p>
-                <p class="system-time">19 900 ₽/год</p>
-                <img src="./images/rfid.png" alt="rfid" class="system-img" />
-                <div class="system-wrap">
-                  <div class="system-number active">1</div>
-                  <div class="system-number active">2</div>
-                  <div class="system-number active">3</div>
-                </div>
+        <!-- system -->
+        <h6 class="advantage-type">наша продукция</h6>
+        <div class="advantage-line"></div>
+        <h3 class="advantage-title">Наша система</h3>
+        <ul class="system">
+          <li class="system-item">
+            <div class="system-info">
+              <h3 class="system-title">RFID</h3>
+              <p class="system-category">панель</p>
+              <p class="system-subtitle">-идентификацию клиентов</p>
+              <p class="system-subtitle secondary-subtitle">
+                -быстрый и удобный доступ к контейнерам хранения.
+              </p>
+              <p class="system-price">1659₽</p>
+              <p class="system-month">в месяц</p>
+              <p class="system-time">19 900 ₽/год</p>
+              <img src="./images/rfid.png" alt="rfid" class="system-img" />
+              <div class="system-wrap">
+                <div class="system-number active">1</div>
+                <div class="system-number active">2</div>
+                <div class="system-number active">3</div>
               </div>
-              <button class="system-button primary-btn">Купить</button>
-            </li>
-            <li class="system-item">
-              <div class="system-info">
-                <h3 class="system-title">RFID</h3>
-                <p class="system-category">панель</p>
-                <p class="system-subtitle">-идентификацию клиентов</p>
-                <p class="system-subtitle secondary-subtitle">
-                  -быстрый и удобный доступ к контейнерам хранения.
-                </p>
-                <p class="system-price">1659₽</p>
-                <p class="system-month">в месяц</p>
-                <p class="system-time">19 900 ₽/год</p>
-                <img src="./images/rfid.png" alt="rfid" class="system-img" />
-                <div class="system-wrap">
-                  <div class="system-number active">1</div>
-                  <div class="system-number active">2</div>
-                  <div class="system-number active">3</div>
-                </div>
+            </div>
+            <button class="system-button primary-btn">Купить</button>
+          </li>
+          <li class="system-item">
+            <div class="system-info">
+              <h3 class="system-title">RFID</h3>
+              <p class="system-category">панель</p>
+              <p class="system-subtitle">-идентификацию клиентов</p>
+              <p class="system-subtitle secondary-subtitle">
+                -быстрый и удобный доступ к контейнерам хранения.
+              </p>
+              <p class="system-price">1659₽</p>
+              <p class="system-month">в месяц</p>
+              <p class="system-time">19 900 ₽/год</p>
+              <img src="./images/rfid.png" alt="rfid" class="system-img" />
+              <div class="system-wrap">
+                <div class="system-number active">1</div>
+                <div class="system-number active">2</div>
+                <div class="system-number active">3</div>
               </div>
-              <button class="system-button primary-btn">Купить</button>
-            </li>
-            <li class="system-item">
-              <div class="system-info">
-                <h3 class="system-title">RFID</h3>
-                <p class="system-category">панель</p>
-                <p class="system-subtitle">-идентификацию клиентов</p>
-                <p class="system-subtitle secondary-subtitle">
-                  -быстрый и удобный доступ к контейнерам хранения.
-                </p>
-                <p class="system-price">1659₽</p>
-                <p class="system-month">в месяц</p>
-                <p class="system-time">19 900 ₽/год</p>
-                <img src="./images/rfid.png" alt="rfid" class="system-img" />
-                <div class="system-wrap">
-                  <div class="system-number active">1</div>
-                  <div class="system-number active">2</div>
-                  <div class="system-number active">3</div>
-                </div>
+            </div>
+            <button class="system-button primary-btn">Купить</button>
+          </li>
+          <li class="system-item">
+            <div class="system-info">
+              <h3 class="system-title">RFID</h3>
+              <p class="system-category">панель</p>
+              <p class="system-subtitle">-идентификацию клиентов</p>
+              <p class="system-subtitle secondary-subtitle">
+                -быстрый и удобный доступ к контейнерам хранения.
+              </p>
+              <p class="system-price">1659₽</p>
+              <p class="system-month">в месяц</p>
+              <p class="system-time">19 900 ₽/год</p>
+              <img src="./images/rfid.png" alt="rfid" class="system-img" />
+              <div class="system-wrap">
+                <div class="system-number active">1</div>
+                <div class="system-number active">2</div>
+                <div class="system-number active">3</div>
               </div>
-              <button class="system-button primary-btn">Купить</button>
-            </li>
-          </ul>
+            </div>
+            <button class="system-button primary-btn">Купить</button>
+          </li>
+        </ul>
 
-          <!-- /system -->
+        <!-- /system -->
+      </div>
+    </div>
+  </section>
+  <!-- /PRODUCT -->
+  <!-- Form -->
+  <section class="form">
+    <div class="container">
+      <h2 class="product-title product title-secondary">
+        Свяжитесь с нами
+      </h2>
+      <p class="product-subtitle"> Наш менеджер свяжется с вами</p>
+      <div class="form-wrap">
+        <div class="form-body">
+
         </div>
       </div>
-    </section>
-    <!-- /PRODUCT -->
-  </body>
-  <script src="./app.js"></script>
+    </div>
+  </section>
+  <!-- /Form -->
+</body>
+<script src="./app.js"></script>
+
 </html>
