@@ -14,9 +14,7 @@
   .container {
     display: flex;
     flex-direction: column;
-    @media (max-width: 850px) {
-      padding: 0;
-    }
+
     @media (max-width: 650px) {
       padding: 0 12px;
     }
@@ -190,9 +188,6 @@
       margin-bottom: 40px;
     }
 
-    @media (max-width: 850px) {
-      margin-left: 18px;
-    }
     @media (max-width: 768px) {
       margin-bottom: 30px;
     }
@@ -248,7 +243,6 @@
     .product-subtitle {
       font-size: 16px;
       max-width: 607px;
-      margin-left: 18px;
     }
   }
   @media (max-width: 550px) {
