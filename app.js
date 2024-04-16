@@ -1,4 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
+const table = document.querySelector(".table");
+const tableBtn = document.querySelector(".table-btn");
 const sidebarHamburger = document.querySelector(".sidebarHamburger");
 const overylay = document.querySelector(".overlay");
 const sidebar = document.querySelector(".sidebar");
@@ -13,4 +15,7 @@ sidebarHamburger.addEventListener("click", () => {
 overylay.addEventListener("click", () => {
   sidebar.classList.remove("show");
   overylay.classList.remove("show");
+});
+tableBtn.addEventListener("click", () => {
+  table.classList.toggle("hidden");
 });

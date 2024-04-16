@@ -1,1 +1,144 @@
-// .table{}
+table {
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+}
+thead tr th {
+  // border-bottom: 1px solid rgba(41, 84, 177, 0.3);
+}
+.line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(41, 84, 177, 0.3);
+  top: 0;
+  left: 0;
+}
+th {
+  padding: 43px 0 22px;
+  font-size: 27px;
+  color: #2954b1;
+  font-weight: 400;
+}
+thead tr th:first-child,
+tbody tr td:first-child {
+  padding-left: 83px;
+  text-align: start;
+}
+thead tr th:last-child,
+tbody tr td:last-child {
+  padding-right: 56px;
+}
+tbody tr:hover {
+  background-color: rgba(41, 84, 177, 0.1);
+
+  td {
+    background-color: rgba(41, 84, 177, 0.1);
+  }
+}
+td {
+  position: relative;
+  height: 109px;
+  vertical-align: middle;
+}
+
+tbody td:not(:first-child) {
+  width: 30%;
+  text-align: center;
+}
+tbody td:first-child {
+  .line {
+    width: calc(100% - 83px);
+    right: 0;
+    left: auto;
+  }
+}
+tbody td:last-child {
+  .line {
+    width: calc(100% - 56px);
+    right: auto;
+    left: 0;
+  }
+}
+.text {
+  position: relative;
+  font-size: 27px;
+  color: black;
+}
+.information {
+  img {
+    position: absolute;
+    top: 6px;
+    right: 26px;
+    width: 21px;
+    height: 21px;
+  }
+  &-text {
+    position: absolute;
+    display: none;
+    top: 6px;
+    right: 0;
+    transform: translateX(100%);
+    max-width: 401px;
+    width: 401px;
+    z-index: 10;
+    padding: 34px 21px 32px;
+    font-size: 21px;
+    filter: drop-shadow(0px 0px 32.5px rgba(0, 0, 0, 0.2));
+    background: white;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    .information-text {
+      display: block;
+    }
+  }
+}
+.table {
+  height: 100%;
+  max-height: 100%;
+
+  &-wrap {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 16px;
+    &:hover {
+      cursor: pointer;
+    }
+    &__text {
+      font-size: 24px;
+      color: #2954b1;
+    }
+  }
+  &-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(60, 99, 184, 0.5);
+  }
+  .table-overflow {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: -1;
+  }
+}
+.hidden {
+  height: 473px;
+  overflow-y: hidden;
+  fill: linear-gradient(180deg, rgba(241, 247, 255, 0) 0%, #f1f7ff 100%);
+  opacity: 0.8;
+  position: relative;
+
+  .table-overflow {
+    visibility: visible;
+
+    z-index: 20;
+  }
+}

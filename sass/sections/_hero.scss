@@ -104,14 +104,13 @@
     }
   }
   .outline-btn {
-    background-color: white;
+    background: white;
     padding: 14px 29px 17px 30px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     gap: 15px;
     border: none;
-
     p {
       color: #214080;
       font-size: 26px;
@@ -408,5 +407,8 @@
     .tablet {
       display: none;
     }
+  }
+  .outline-btn:hover {
+    opacity: 0.7;
   }
 }
