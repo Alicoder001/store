@@ -88,6 +88,11 @@
     }
   }
   &-hamburger {
+    width: 30px;
+    img {
+      width: 100%;
+    }
+
     display: none;
     @media (max-width: 650px) {
       display: block;
@@ -127,6 +132,12 @@
           font-size: 13px;
         }
         gap: 25px;
+      }
+      @media (max-width: 700px) {
+        a {
+          font-size: 12px;
+        }
+        gap: 20px;
       }
     }
     &__item {
@@ -182,8 +193,11 @@
     align-items: flex-end;
     padding: 14px 12px;
     text-align: end;
+
     &__img {
       transform: rotate(90deg);
+      margin-right: 10px;
+      margin-top: 10px;
       margin-bottom: 54px;
       &:hover {
         cursor: pointer;

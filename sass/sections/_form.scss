@@ -1,5 +1,4 @@
 .form {
-  margin-bottom: 150px;
   &-wrap {
     width: 100%;
     display: flex;
@@ -19,6 +18,11 @@
     top: -107px;
     left: 25px;
     width: 50%;
+
+    align-items: center;
+    img {
+      width: 100%;
+    }
   }
   form {
     max-width: 50%;
@@ -59,5 +63,208 @@
     font-size: 16px;
     max-width: 445px;
     width: 100%;
+  }
+}
+@media (max-width: 1700px) {
+  .form {
+    &-description {
+      margin-bottom: 137px;
+    }
+    &-img {
+      position: absolute;
+      top: -56px;
+      left: 25px;
+      width: 47%;
+    }
+    form {
+      width: 100%;
+      padding: 30px 39px 30px 82px;
+      .input-wrap {
+        margin-bottom: 26px;
+        filter: drop-shadow(0px 0px 18px rgba(0, 0, 0, 0.1))
+          drop-shadow(0px 10px 0px #486dbc);
+      }
+      .first {
+        margin-bottom: 25px;
+      }
+      input {
+        padding: 15px 20px;
+        font-size: 25px;
+      }
+    }
+    &-subtitle {
+      margin-bottom: 26px;
+      font-size: 16px;
+    }
+    &-btn {
+      padding: 15px 22px;
+      font-size: 24px;
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .form {
+    &-description {
+      margin-bottom: 85px;
+    }
+    &-img {
+      position: absolute;
+      top: -33px;
+      width: 43%;
+    }
+    form {
+      padding: 30px 20px 26px 20px;
+      .input-wrap {
+        margin-bottom: 26px;
+        filter: drop-shadow(0px 0px 18px rgba(0, 0, 0, 0.1))
+          drop-shadow(0px 10px 0px #486dbc);
+      }
+      .first {
+        margin-bottom: 20px;
+      }
+      input {
+        padding: 10px 20px;
+        font-size: 25px;
+      }
+    }
+    &-subtitle {
+      margin-bottom: 26px;
+      font-size: 12px;
+      max-width: 333px;
+    }
+    &-btn {
+      padding: 14px 21px;
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .form {
+    &-description {
+      margin-bottom: 60px;
+    }
+
+    form {
+      padding: 24px 20px 20px 30px;
+      .input-wrap {
+        margin-bottom: 20px;
+        filter: drop-shadow(0px 0px 13.916px rgba(0, 0, 0, 0.1))
+          drop-shadow(0px 7.731px 0px #486dbc);
+      }
+      .first {
+        margin-bottom: 20px;
+      }
+      input {
+        padding: 9px 20px;
+        font-size: 19px;
+        max-width: 216px;
+      }
+    }
+    &-subtitle {
+      margin-bottom: 11px;
+      font-size: 9px;
+      max-width: 270px;
+    }
+    &-btn {
+      padding: 11px 17px;
+      font-size: 15px;
+      border-radius: 10px;
+    }
+    &-img {
+      position: absolute;
+      top: -20px;
+      left: 10px;
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .form {
+    &-description {
+      margin-bottom: 60px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+    &-wrap {
+      justify-content: flex-start;
+      width: 100%;
+      background: url("../../images/bg.png"), url("../../images/contact-bg.png");
+      background-repeat: no-repeat;
+      background-position: center, bottom 0 right 0;
+      background-size: cover, 80%;
+    }
+    form {
+      padding: 42px 120px 77px 15px;
+
+      max-width: 100%;
+      .input-wrap {
+        margin-bottom: 20px;
+        filter: drop-shadow(0px 0px 13.916px rgba(0, 0, 0, 0.1))
+          drop-shadow(0px 7.731px 0px #486dbc);
+      }
+      .first {
+        margin-bottom: 20px;
+      }
+      input {
+        padding: 10px 20px;
+        font-size: 25px;
+        max-width: 100%;
+      }
+    }
+    &-subtitle {
+      margin-bottom: 26px;
+      font-size: 12px;
+      max-width: 333px;
+    }
+    &-btn {
+      padding: 14px 21px;
+      font-size: 20px;
+    }
+    &-img {
+      display: none;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .form {
+    &-description {
+      margin-bottom: 60px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+    &-wrap {
+      justify-content: flex-start;
+      width: 100%;
+      background-size: cover, auto;
+    }
+    form {
+      padding: 15px 80px 15px 15px;
+      max-width: 100%;
+      .input-wrap {
+        margin-bottom: 20px;
+        filter: drop-shadow(0px 0px 13.916px rgba(0, 0, 0, 0.1))
+          drop-shadow(0px 7.731px 0px #486dbc);
+      }
+      .first {
+        margin-bottom: 20px;
+      }
+      input {
+        padding: 9px 20px;
+        font-size: 19px;
+        max-width: 100%;
+      }
+    }
+    &-subtitle {
+      margin-bottom: 11px;
+      font-size: 9px;
+      max-width: 270px;
+    }
+    &-btn {
+      padding: 11px 17px;
+      font-size: 15px;
+      border-radius: 10px;
+    }
   }
 }

@@ -128,7 +128,7 @@
         font-size: 17px;
       }
     }
-    @media (max-width: 550px) {
+    @media (max-width: 400px) {
       padding: 6px 13px 8px 14px;
       border-radius: 7px;
       gap: 6px;
@@ -153,7 +153,7 @@
       padding: 9px 17px 10px 18px;
       font-size: 17px;
     }
-    @media (max-width: 550px) {
+    @media (max-width: 400px) {
       padding: 7px 12px 8px 13px;
       font-size: 12px;
       border-radius: 7px;
@@ -168,6 +168,7 @@
       position: absolute;
       bottom: 24px;
       left: 13px;
+      right: auto;
     }
     @media (max-width: 1600px) {
       max-width: 600px;
@@ -176,7 +177,7 @@
         width: 585px;
         height: 485px;
         left: auto;
-        right: auto;
+        right: 0;
       }
     }
     @media (max-width: 1250px) {
@@ -223,7 +224,6 @@
     width: 100%;
     color: white;
     padding-top: 8px;
-
     &__title {
       text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
       color: white;

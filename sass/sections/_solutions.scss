@@ -1,58 +1,6 @@
 //Solutions section start
 
 .solutions {
-  .container {
-    padding-bottom: 150px;
-
-    @media (max-width: 1440px) {
-      padding-bottom: 120px;
-    }
-
-    @media (max-width: 1000px) {
-      padding-bottom: 70px;
-    }
-
-    @media (max-width: 768px) {
-      padding-bottom: 70px;
-    }
-    @media (max-width: 650px) {
-      padding-bottom: 60px;
-    }
-    @media (max-width: 360px) {
-      padding-bottom: 50px;
-      padding-left: 12px;
-      padding-right: 12px;
-    }
-  }
-  &-title {
-    h1 {
-      font-size: 60px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-    }
-    @media (max-width: 1440px) {
-      h1 {
-        font-size: 50px;
-      }
-    }
-    @media (max-width: 1000px) {
-      h1 {
-        font-size: 40px;
-      }
-    }
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 28px;
-      }
-    }
-    @media (max-width: 360px) {
-      h1 {
-        font-size: 20px;
-      }
-    }
-  }
-
   .solutions-demo__button {
     .primary-btn {
       @media (max-width: 1250px) {

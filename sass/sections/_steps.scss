@@ -53,12 +53,6 @@ body {
       }
     }
     &__text {
-      h1 {
-        font-size: 60px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-      }
       p {
         margin-top: 2.5px;
         font-weight: 400;
@@ -75,19 +69,12 @@ body {
       }
 
       @media (max-width: 1440px) {
-        h1 {
-          font-size: 50px;
-        }
-
         p {
           font-size: 25px;
           max-width: 607px;
         }
       }
       @media (max-width: 1000px) {
-        h1 {
-          font-size: 40px;
-        }
         p {
           font-size: 22px;
           max-width: 521px;
@@ -95,9 +82,6 @@ body {
       }
 
       @media (max-width: 940px) {
-        h1 {
-          font-size: 28px;
-        }
         p {
           font-size: 18px;
           max-width: 380px;
@@ -105,9 +89,6 @@ body {
       }
 
       @media (max-width: 768px) {
-        h1 {
-          font-size: 28px;
-        }
         p {
           font-size: 16px;
           max-width: 310px;
@@ -123,12 +104,9 @@ body {
       }
 
       @media (max-width: 480px) {
-        h1 {
-          font-size: 20px;
-        }
         p {
           font-size: 11px;
-          max-width: 292px;
+          padding-right: 20px;
         }
       }
 
@@ -139,6 +117,7 @@ body {
         p {
           font-size: 11px;
           max-width: 292px;
+          padding-right: 20px;
         }
       }
     }
@@ -146,59 +125,29 @@ body {
   &-problem {
     margin: 150px 0 150px 0;
     @media (max-width: 1440px) {
-      margin: 120px 0 120px 0;
+      margin: 120px 0 0 0;
     }
     @media (max-width: 1000px) {
-      margin: 50px 0 70px 0;
+      margin: 50px 0 0 0;
     }
-    @media (max-width: 768px) {
-      margin: 50px 0 60px 0;
-    }
-    @media (max-width: 768px) {
-      margin: 50px 0 50px 0;
-    }
-    @media (max-width: 768px) {
-      margin: 50px 0 50px 0;
-    }
+
     &__title {
       margin-bottom: 65px;
 
-      h1 {
-        font-size: 60px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-      }
-
       @media (max-width: 1440px) {
         margin-bottom: 40px;
-        h1 {
-          font-size: 50px;
-        }
       }
       @media (max-width: 1000px) {
         margin-bottom: 40px;
-        h1 {
-          font-size: 40px;
-        }
       }
       @media (max-width: 768px) {
         margin-bottom: 23px;
-        h1 {
-          font-size: 28px;
-        }
       }
       @media (max-width: 480px) {
         margin-bottom: 23px;
-        h1 {
-          font-size: 20px;
-        }
       }
       @media (max-width: 360px) {
         margin-bottom: 20px;
-        h1 {
-          font-size: 20px;
-        }
       }
     }
     &__item {
