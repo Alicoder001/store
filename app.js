@@ -106,7 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (res.msg_type === "success") {
         document.getElementById("not-text").innerHTML = res.msg;
         setTimeout(() => notificationBar.classList.remove("show-bar"), 5000);
-        console.log(data);
         form.reset();
       }
     } catch (error) {
@@ -134,7 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (res.msg_type === "success") {
         document.getElementById("not-text").innerHTML = res.msg;
         setTimeout(() => notificationBar.classList.remove("show-bar"), 5000);
-        console.log(data);
         form.reset();
         modal.classList.add("modal-hidden");
       }
