@@ -8,6 +8,47 @@
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
   </head>
   <body>
+    <div class="notification-bar">
+      <div class="notification-bar__content">
+        <h3 id="not-text">Контактные данные записаны</h3>
+      </div>
+    </div>
+    <div id="modal" class="modal modal-hidden">
+      <div id="modal-overlay" class="overlay"></div>
+      <div class="modal-wrap">
+        <img id="cancel" class="cancel" src="./images/cancel.svg" alt="" />
+        <img src="./images/modal.svg" alt="" class="modal-img" />
+
+        <form class="form modal-form" id="form-hero">
+          <h3>Оставьте заявку:</h3>
+          <div class="input-wrap first">
+            <input
+              id="contact-name"
+              type="text"
+              placeholder="Ваше имя"
+              required
+            />
+          </div>
+          <div class="input-wrap">
+            <input
+              id="contact-number"
+              type="number"
+              placeholder="Ваш телефон"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              required
+            />
+          </div>
+          <p class="form-subtitle">
+            Нажимая “Отправить” вы подтверждаете свое согласие на обработку и
+            хранение ваших персональных данных в соответствии с политикой
+            обработки персональных данных.
+          </p>
+          <button id="form-modal-btn" class="primary-btn form-btn">
+            Отправить запрос
+          </button>
+        </form>
+      </div>
+    </div>
     <div class="wrap">
       <!-- HEADER -->
       <header class="header">
@@ -19,16 +60,16 @@
             <nav class="header-nav">
               <ul class="header-nav__list">
                 <li class="header-nav__item">
-                  <a href="/">О нас</a>
+                  <a href="#about">О нас</a>
                 </li>
                 <li class="header-nav__item">
-                  <a href="/">Наши решения</a>
+                  <a href="#solution">Наши решения</a>
                 </li>
                 <li class="header-nav__item">
-                  <a href="/">Продукты</a>
+                  <a href="#product">Продукты</a>
                 </li>
                 <li class="header-nav__item">
-                  <a href="/">Как это работает</a>
+                  <a href="#advanced">Как это работает</a>
                 </li>
               </ul>
             </nav>
@@ -53,16 +94,16 @@
             />
             <ul class="header-sidebar__list">
               <li class="header-sidebar__item">
-                <a href="/">О нас</a>
+                <a href="#about">О нас</a>
               </li>
               <li class="header-sidebar__item">
-                <a href="/">Наши решения</a>
+                <a href="#solution">Наши решения</a>
               </li>
               <li class="header-sidebar__item">
-                <a href="/">Продукты</a>
+                <a href="#product">Продукты</a>
               </li>
               <li class="header-sidebar__item">
-                <a href="/">Как это работает</a>
+                <a href="#advanced">Как это работает</a>
               </li>
             </ul>
             <div class="header-sidebar__call">
@@ -87,13 +128,13 @@
         <div class="container">
           <div class="hero-info">
             <h4 class="hero-name">Воспользуйтесь</h4>
-            <h5 class="hero-title">Self-Storage</h5>
+            <h1 class="hero-title">Self-Storage</h1>
             <p class="hero-subtitle">
               Удобное и надежное решение для хранения ваших личных вещей,
               обеспечивая просторное пространство и гибкую аренду.
             </p>
             <div class="hero-button">
-              <button class="hero-btn outline-btn">
+              <button id="hero-btn" class="hero-btn outline-btn">
                 <p>Консультация</p>
                 <div class="img-wrap arrow-wrap"></div>
               </button>
@@ -108,7 +149,7 @@
           <div class="hero-img">
             <div class="hero-notification left">
               <h6 class="hero-notification__title large">Забронировать -</h6>
-              <div class="hero-notification__wrapper">
+              <div id="hero-left" class="hero-notification__wrapper">
                 <h6 class="hero-notification__title small">легко и просто!</h6>
                 <div class="hero-notification__wrap">
                   <p class="hero-notification__subtitle">
@@ -120,7 +161,7 @@
             </div>
             <div class="hero-notification right">
               <h6 class="hero-notification__title large">Узнайте больше</h6>
-              <div class="hero-notification__wrapper">
+              <div id="hero-right" class="hero-notification__wrapper">
                 <h6 class="hero-notification__title small">
                   о нашей продукции
                 </h6>
@@ -148,7 +189,7 @@
       <!-- /HERO -->
     </div>
     <!-- About section start "О НАС" -->
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <div class="about-item">
           <div class="about-item__image">
@@ -241,7 +282,7 @@
 
     <!-- Solutions section start "Наши решения" -->
 
-    <section class="solutions">
+    <section id="solution" class="solutions">
       <div class="container">
         <div class="solutions-title">
           <h2>Наши решения</h2>
@@ -305,7 +346,7 @@
     <!-- Solutions section start "Наши решения" -->
 
     <!-- PRODUCT -->
-    <section class="product">
+    <section id="product" class="product">
       <div class="container">
         <h2 class="product-title">Наши продукты</h2>
         <ul class="product-card">
@@ -389,7 +430,7 @@
                 <td>
                   <div class="line"></div>
                   <div class="text">
-                    Бронирование ячеек и заключение
+                    Онлайн оплата и подписка на услуги
                     <div class="information">
                       <img src="./images/information.svg" alt="information" />
                       <p class="information-text">
@@ -407,6 +448,51 @@
                 <td>
                   <div class="line"></div>
                   <img src="./images/check.png" alt="check" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="line"></div>
+                  <div class="text">
+                    Доступ на склад 24/7
+                    <div class="information">
+                      <img src="./images/information.svg" alt="information" />
+                      <p class="information-text">
+                        Удобная и безопасная возможность оплатить аренду или
+                        дополнительные услуги, сокращая время и упрощая процесс
+                        оплаты для максимального комфорта клиентов.
+                      </p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="line"></div>
+                </td>
+                <td>
+                  <div class="line"></div>
+                  <img src="./images/check.png" alt="check" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="line"></div>
+                  <div class="text">
+                    Делегирование доступа к ячейке
+                    <div class="information">
+                      <img src="./images/information.svg" alt="information" />
+                      <p class="information-text">
+                        Удобная и безопасная возможность оплатить аренду или
+                        дополнительные услуги, сокращая время и упрощая процесс
+                        оплаты для максимального комфорта клиентов.
+                      </p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="line"></div>
+                </td>
+                <td>
+                  <div class="line"></div>
                 </td>
               </tr>
               <tr>
@@ -437,7 +523,7 @@
                 <td>
                   <div class="line"></div>
                   <div class="text">
-                    Бронирование ячеек и заключение
+                    Обработка персональных данный в согласии с 152 ФЗ
                     <div class="information">
                       <img src="./images/information.svg" alt="information" />
                       <p class="information-text">
@@ -454,7 +540,28 @@
                 </td>
                 <td>
                   <div class="line"></div>
-                  <img src="./images/check.png" alt="check" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="line"></div>
+                  <div class="text">
+                    Делегирование доступа к ячейке
+                    <div class="information">
+                      <img src="./images/information.svg" alt="information" />
+                      <p class="information-text">
+                        Удобная и безопасная возможность оплатить аренду или
+                        дополнительные услуги, сокращая время и упрощая процесс
+                        оплаты для максимального комфорта клиентов.
+                      </p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="line"></div>
+                </td>
+                <td>
+                  <div class="line"></div>
                 </td>
               </tr>
               <tr>
@@ -485,6 +592,51 @@
                 <td>
                   <div class="line"></div>
                   <div class="text">
+                    Обработка персональных данный в согласии с 152 ФЗ
+                    <div class="information">
+                      <img src="./images/information.svg" alt="information" />
+                      <p class="information-text">
+                        Удобная и безопасная возможность оплатить аренду или
+                        дополнительные услуги, сокращая время и упрощая процесс
+                        оплаты для максимального комфорта клиентов.
+                      </p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="line"></div>
+                  <img src="./images/check.png" alt="check" />
+                </td>
+                <td>
+                  <div class="line"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="line"></div>
+                  <div class="text">
+                    Делегирование доступа к ячейке
+                    <div class="information">
+                      <img src="./images/information.svg" alt="information" />
+                      <p class="information-text">
+                        Удобная и безопасная возможность оплатить аренду или
+                        дополнительные услуги, сокращая время и упрощая процесс
+                        оплаты для максимального комфорта клиентов.
+                      </p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="line"></div>
+                </td>
+                <td>
+                  <div class="line"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="line"></div>
+                  <div class="text">
                     Бронирование ячеек и заключение
                     <div class="information">
                       <img src="./images/information.svg" alt="information" />
@@ -503,6 +655,29 @@
                 <td>
                   <div class="line"></div>
                   <img src="./images/check.png" alt="check" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="line"></div>
+                  <div class="text">
+                    Обработка персональных данный в согласии с 152 ФЗ
+                    <div class="information">
+                      <img src="./images/information.svg" alt="information" />
+                      <p class="information-text">
+                        Удобная и безопасная возможность оплатить аренду или
+                        дополнительные услуги, сокращая время и упрощая процесс
+                        оплаты для максимального комфорта клиентов.
+                      </p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="line"></div>
+                  <img src="./images/check.png" alt="check" />
+                </td>
+                <td>
+                  <div class="line"></div>
                 </td>
               </tr>
             </tbody>
@@ -524,7 +699,7 @@
         </p>
         <!-- /product -->
 
-        <div class="advantage">
+        <div id="advanced" class="advantage">
           <!-- security -->
           <h6 class="advantage-type">наша продукция</h6>
           <div class="advantage-line"></div>
@@ -554,11 +729,13 @@
                 <img src="./images/fortnesslock.png" alt="lock" />
               </div>
               <div class="security-info">
-                <h3 class="security-info__title">FortressLock Systems</h3>
-                <p class="security-info__subtitle">
-                  Надежные замки для контейнеров хранения обеспечивающие
-                  безопасность и защиту.
-                </p>
+                <div class="">
+                  <h3 class="security-info__title">FortressLock Systems</h3>
+                  <p class="security-info__subtitle">
+                    Создают непроницаемую защиту и безопасность для вашего
+                    хранилища.
+                  </p>
+                </div>
                 <div class="security-info__wrapper">
                   <div class="security-info__number">1</div>
                   <p class="security-info__or">ИЛИ</p>
@@ -576,8 +753,8 @@
           <ul class="system">
             <li class="system-item">
               <div class="system-info">
+                <h3 class="system-title">RFID</h3>
                 <div class="system-wrapper">
-                  <h3 class="system-title">RFID</h3>
                   <p class="system-category">панель</p>
                   <p class="system-subtitle">-идентификацию клиентов</p>
                 </div>
@@ -590,8 +767,8 @@
                 <img src="./images/rfid.png" alt="rfid" class="system-img" />
                 <div class="system-wrap">
                   <div class="system-number active">1</div>
-                  <div class="system-number active">2</div>
-                  <div class="system-number active">3</div>
+                  <div class="system-number">2</div>
+                  <div class="system-number">3</div>
                 </div>
                 <button class="system-button hide-button primary-btn">
                   Купить
@@ -601,8 +778,8 @@
             </li>
             <li class="system-item">
               <div class="system-info">
+                <h3 class="system-title">Кодовая</h3>
                 <div class="system-wrapper">
-                  <h3 class="system-title">RFID</h3>
                   <p class="system-category">панель</p>
                   <p class="system-subtitle">-идентификацию клиентов</p>
                 </div>
@@ -616,9 +793,9 @@
                   <img src="./images/kodavaya.png" alt="rfid" />
                 </div>
                 <div class="system-wrap">
-                  <div class="system-number active">1</div>
+                  <div class="system-number">1</div>
                   <div class="system-number active">2</div>
-                  <div class="system-number active">3</div>
+                  <div class="system-number">3</div>
                 </div>
                 <button class="system-button hide-button primary-btn">
                   Купить
@@ -628,8 +805,8 @@
             </li>
             <li class="system-item">
               <div class="system-info">
+                <h3 class="system-title">Доступ</h3>
                 <div class="system-wrapper">
-                  <h3 class="system-title">RFID</h3>
                   <p class="system-category">панель</p>
                   <p class="system-subtitle">-идентификацию клиентов</p>
                 </div>
@@ -643,8 +820,8 @@
                   <img src="./images/dostup.png" alt="rfid" />
                 </div>
                 <div class="system-wrap">
-                  <div class="system-number active">1</div>
-                  <div class="system-number active">2</div>
+                  <div class="system-number">1</div>
+                  <div class="system-number">2</div>
                   <div class="system-number active">3</div>
                 </div>
                 <button class="system-button hide-button primary-btn">
@@ -664,7 +841,7 @@
     <!-- PARTNER -->
     <section class="partner">
       <div class="container">
-        <h2 class="partner-title title-secondary">Наша продукция</h2>
+        <h2 class="partner-title title-secondary">Наши партнеры</h2>
         <p class="product-subtitle partner-subtitle">
           Узнайте подробнее о парнтнерах, с которыми мы работаем.
         </p>
@@ -701,26 +878,39 @@
       <div class="container">
         <h2 class="partner-title title-secondary">Связаться с нами</h2>
         <p class="product-subtitle form-description">
-          Узнайте подробнее о парнтнерах, с которыми мы работаем.
+          Остались вопросы? Оставьте свои контакты, и мы свяжемся с вами
         </p>
         <div class="form-wrap">
           <div class="form-img">
             <img src="./images/contact.svg" alt="contact" />
           </div>
-          <form>
+          <form id="form">
             <h3>Оставьте заявку:</h3>
             <div class="input-wrap first">
-              <input type="text" placeholder="Ваше имя" />
+              <input
+                id="contact-name"
+                type="text"
+                placeholder="Ваше имя"
+                required
+              />
             </div>
             <div class="input-wrap">
-              <input type="tel" placeholder="Ваш телефон" />
+              <input
+                id="contact-number"
+                type="number"
+                placeholder="Ваш телефон"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                required
+              />
             </div>
             <p class="form-subtitle">
               Нажимая “Отправить” вы подтверждаете свое согласие на обработку и
               хранение ваших персональных данных в соответствии с политикой
               обработки персональных данных.
             </p>
-            <button class="primary-btn form-btn">Отправить запрос</button>
+            <button id="form-btn" class="primary-btn form-btn">
+              Отправить запрос
+            </button>
           </form>
         </div>
       </div>
@@ -735,16 +925,16 @@
           <nav class="footer-nav">
             <ul class="footer-nav__list">
               <li class="footer-nav__item">
-                <a href="/">О нас</a>
+                <a href="#about">О нас</a>
               </li>
               <li class="footer-nav__item">
-                <a href="/">Наши решения</a>
+                <a href="#solution">Наши решения</a>
               </li>
               <li class="footer-nav__item">
-                <a href="/">Продукты</a>
+                <a href="#product">Продукты</a>
               </li>
               <li class="footer-nav__item">
-                <a href="/">Как это работает</a>
+                <a href="#advanced">Как это работает</a>
               </li>
               <div class="footer-call hidden-call">
                 <img

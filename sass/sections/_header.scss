@@ -112,6 +112,9 @@
       a {
         color: white;
         font-size: 20px;
+        &:hover {
+          color: rgb(158, 220, 248);
+        }
       }
       @media (max-width: 1600px) {
         gap: 40px;

@@ -242,6 +242,10 @@
       background: rgba(255, 255, 255, 0.2);
       border-radius: 15px;
       position: relative;
+      &:hover {
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.5);
+      }
     }
     &__subtitle {
       font-size: 17px;
