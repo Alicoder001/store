@@ -118,6 +118,7 @@
     }
     @media (max-width: 1250px) {
       padding: 11px 20px 13px 24px;
+      border-radius: 12px;
       p {
         font-size: 20px;
       }
@@ -127,6 +128,7 @@
       p {
         font-size: 17px;
       }
+      border-radius: 10px;
     }
     @media (max-width: 400px) {
       padding: 6px 13px 8px 14px;
@@ -148,10 +150,12 @@
     @media (max-width: 1250px) {
       padding: 12px 20px 13px 20px;
       font-size: 20px;
+      border-radius: 12px;
     }
     @media (max-width: 768px) {
       padding: 9px 17px 10px 18px;
       font-size: 17px;
+      border-radius: 10px;
     }
     @media (max-width: 400px) {
       padding: 7px 12px 8px 13px;
@@ -341,6 +345,9 @@
 
   .arrow-bottom {
     margin-top: 81px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   @media (max-width: 1440px) {

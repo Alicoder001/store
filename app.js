@@ -28,11 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".table-btn").addEventListener("click", (e) => {
     document.querySelector(".table").classList.toggle("hidden");
 
-    if (table.classList.contains("hidden")) {
-      document.querySelector(".table-wrap__text").target.innerHTML =
-        "Показать еще";
+    if (document.querySelector(".table").classList.contains("hidden")) {
+      document.querySelector(".table-wrap__text").innerHTML = "Показать еще";
+      document.querySelector(".table-wrap__img").style.transform =
+        "rotate(0deg)";
     } else {
       document.querySelector(".table-wrap__text").innerHTML = "Скрыть таблицу";
+      document.querySelector(".table-wrap__img").style.transform =
+        "rotate(180deg)";
     }
   });
 
