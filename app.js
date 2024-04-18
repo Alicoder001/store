@@ -1,3 +1,31 @@
+const phoneInput = document.getElementById("contact-number");
+const phoneInputModal = document.getElementById("contact-modal-number");
+
+// Telefon raqami uchun input elementiga maskani qo'yish
+const phoneMask = IMask(phoneInput, {
+  mask: "+7 (000) 000-00-00", // Raqam maskasi
+  // qavs ichidagi raqamlar uchun raqam maskasi
+  definitions: {
+    0: /[0-9]/,
+  },
+});
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 10) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+});
+
+const phoneModalMask = IMask(phoneInputModal, {
+  mask: "+7 (000) 000-00-00", // Raqam maskasi
+  // qavs ichidagi raqamlar uchun raqam maskasi
+  definitions: {
+    0: /[0-9]/,
+  },
+});
 document.addEventListener("DOMContentLoaded", () => {
   const sidebar = document.querySelector(".sidebar");
   const overlay = document.querySelector(".overlay");
@@ -62,12 +90,14 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     const name = document.getElementById("contact-name").value;
     const number = document.getElementById("contact-number").value;
+
+    if (number.length < 18) return;
+    const newNumber = validation(number);
     const data = {
       firstname: name,
       from: "store__engineering",
-      username: number,
+      username: newNumber,
     };
-
     try {
       document.getElementById("form-btn").innerHTML = "Loading...";
       const res = await postData(data);
@@ -76,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (res.msg_type === "success") {
         document.getElementById("not-text").innerHTML = res.msg;
         setTimeout(() => notificationBar.classList.remove("show-bar"), 5000);
+        console.log(data);
         form.reset();
       }
     } catch (error) {
@@ -85,12 +116,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   formModal.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const name = document.getElementById("contact-name").value;
-    const number = document.getElementById("contact-number").value;
+    const name = document.getElementById("contact-modal-name").value;
+    const number = document.getElementById("contact-modal-number").value;
+    if (number.length < 18) return;
+    const newNumber = validation(number);
     const data = {
       firstname: name,
       from: "store__engineering",
-      username: number,
+      username: newNumber,
     };
 
     try {
@@ -101,6 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (res.msg_type === "success") {
         document.getElementById("not-text").innerHTML = res.msg;
         setTimeout(() => notificationBar.classList.remove("show-bar"), 5000);
+        console.log(data);
         form.reset();
         modal.classList.add("modal-hidden");
       }
@@ -109,7 +143,15 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error posting data", error);
     }
   });
-
+  function validation(number) {
+    const newNumber = number
+      .replaceAll("+", "")
+      .replaceAll("(", "")
+      .replaceAll(")", "")
+      .replaceAll("-", "")
+      .replaceAll(" ", "");
+    return newNumber;
+  }
   // Helper function for POST request
   async function postData(data) {
     const response = await fetch("https://ssttoorree.ru/_receive_question_", {

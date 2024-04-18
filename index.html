@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Store</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <script src="https://unpkg.com/imask"></script>
   </head>
   <body>
     <div class="notification-bar">
@@ -23,7 +24,7 @@
           <h3>Оставьте заявку:</h3>
           <div class="input-wrap first">
             <input
-              id="contact-name"
+              id="contact-modal-name"
               type="text"
               placeholder="Ваше имя"
               required
@@ -31,10 +32,10 @@
           </div>
           <div class="input-wrap">
             <input
-              id="contact-number"
-              type="number"
-              placeholder="Ваш телефон"
-              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              id="contact-modal-number"
+              type="text"
+              name="phone"
+              placeholder="+7 (999) 999-99-99"
               required
             />
           </div>
@@ -899,9 +900,9 @@
             <div class="input-wrap">
               <input
                 id="contact-number"
-                type="number"
-                placeholder="Ваш телефон"
-                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                placeholder="+7 (999) 999-99-99"
+                type="text"
+                name="phone"
                 required
               />
             </div>

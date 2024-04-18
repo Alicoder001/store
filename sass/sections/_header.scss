@@ -1,7 +1,11 @@
 .header {
   padding: 28px 0 27px;
   color: white;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
   @media (max-width: 1000px) {
     padding: 33px 0 27px;
   }
@@ -243,4 +247,7 @@
   height: 100%;
   width: 100%;
   z-index: 10;
+}
+.sticky {
+  background-color: rgb(41, 84, 177, 0.82);
 }
